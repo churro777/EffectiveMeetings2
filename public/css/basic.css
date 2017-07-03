@@ -1,0 +1,50 @@
+img {
+    width: 100%;
+}
+
+.space-1 {
+    margin-top: .5em;
+}
+
+.space-2 {
+    margin-top: 1em;
+}
+
+.space-3 {
+    margin-top: 1.5em;
+}
+
+.space-4 {
+    margin-top: 2em;
+}
+
+.space-5 {
+    margin-top: 2.5em;
+}
+
+.space-6 {
+    margin-top: 3em;
+}
+
+.center {
+    text-align: center;
+}
+
+.floatRight {
+    float: right;
+}
+
+.noMarginRight {
+    margin-right: 0;
+}
+.noMarginLeft {
+    margin-left: 0;
+}
+
+.noPadRight {
+    padding-right: 0;
+}
+
+.noPadLeft {
+    padding-left: 0;
+}

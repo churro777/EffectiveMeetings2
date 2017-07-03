@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../partials/header.ejs %>
+    <style media="screen">
+    html, body {
+        overflow:auto;
+    }
+    </style>
+</head>
+
+<body class="container">
+
+    <div class="row">
+        <h1 class="col-xs-12">Testing function calls</h1>
+    </div>
+
+    <hr>
+
+    <!-- user tests -->
+    <div class="row">
+        <form class="col-xs-6" action="createUser" method="post">
+            <h3>createUser - post</h3>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="text" name="password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Create User</button>
+            </div>
+        </form>
+
+        <form class="col-xs-6" action="login" method="post">
+            <h3>Login - post</h3>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="text" name="password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <!-- note tests -->
+    <div class="row">
+        <form class="col-xs-4" action="createNote" method="post">
+            <h3>createNote - post</h3>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div class="form-group">
+                <label for="">Title</label>
+                <input type="text" name="title">
+            </div>
+            <div class="form-group">
+                <label for="">Content</label>
+                <input type="text" name="content">
+            </div>
+            <div class="form-group">
+                <button type="submit">Create Note</button>
+            </div>
+        </form>
+        <form class="col-xs-4" action="getNotes" method="get">
+            <h3>getNotes - get</h3>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username">
+            </div>
+            <button type="submit">Get Notes</button>
+        </form>
+        <form class="col-xs-4" action="updateNote" method="post">
+            <h3>updateNote - post</h3>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div class="form-group">
+                <label for="">Title</label>
+                <input type="text" name="title">
+            </div>
+            <div class="form-group">
+                <label for="">Content</label>
+                <input type="text" name="content">
+            </div>
+            <div class="form-group">
+                <button type="submit">Update Note</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <!-- agenda tests -->
+    <div class="row">
+        <form class="col-xs-4" action="addAgendaItem" method="post">
+            <h3>addAgendaItem - post</h3>
+            <div class="form-group">
+                <label for="">note_id</label>
+                <input type="number" name="note_id">
+            </div>
+            <div class="form-group">
+                <label for="">Item</label>
+                <input type="text" name="item">
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Agenda Item</button>
+            </div>
+        </form>
+
+        <form class="col-xs-4" action="getAgendaItems" method="get">
+            <h3>getAgendaItems - get</h3>
+            <div class="form-group">
+                <label for="">note_id</label>
+                <input type="number" name="note_id">
+            </div>
+            <div class="form-group">
+                <button type="submit">Get Agenda Item</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
